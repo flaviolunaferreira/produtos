@@ -3,7 +3,8 @@ package the.coyote.produto.model.entity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data@NoArgsConstructor
+@Data
+@NoArgsConstructor
 public class Tamanhos {
 
     private String tamanho;
