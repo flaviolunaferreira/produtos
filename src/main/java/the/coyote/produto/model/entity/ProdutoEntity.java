@@ -27,4 +27,20 @@ public class ProdutoEntity extends BasicEntity {
     private List<Cores> cores;
     private List<Tamanhos> tamanhos;
 
+    public ProdutoEntity(String nome, String descricao, String tipo, BigDecimal preco, BigDecimal desconto,
+                    boolean produtoNovo, List<ImagemProduto> imagens, List<ImagemDescricao> imagemDescricao,
+                    List<Avaliacoes> avaliacoes, List<Cores> cores, List<Tamanhos> tamanhos) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.tipo = tipo;
+        this.preco = preco;
+        this.desconto = desconto;
+        this.produtoNovo = produtoNovo;
+        this.imagens = imagens;
+        this.imagemDescricao = imagemDescricao;
+        this.avaliacoes = avaliacoes;
+        this.cores = cores;
+        this.tamanhos = tamanhos;                
+    }
+
 }

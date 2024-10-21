@@ -21,11 +21,11 @@ public interface ProdutoService {
 
     ProdutoBasicResponseDTO create(ProdutoResquestDTO dto) throws DuplicateValue;
 
-    ProdutoBasicResponseDTO update(String id, ProdutoResquestDTO dto) throws NotFound;
+    ProdutoResponseDTO update(String id, ProdutoResquestDTO dto) throws NotFound;
 
-    String delete(Integer id) throws IntegratyViolation;
+    String delete(String id) throws IntegratyViolation;
 
-    List<ProdutoResponseDTO> findByNomeConteiningIgnoreCase(String id) throws NotFound;
+    List<ProdutoResponseDTO> findByNomeConteiningIgnoreCase(String nome) throws NotFound;
 
     
 } 

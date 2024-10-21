@@ -94,7 +94,7 @@ public class ProdutoController {
         @ApiResponse(responseCode = "404", description = "Produto não encontrado."),
         @ApiResponse(responseCode = "500", description = "Erro interno do servidor.")
     })
-    public ResponseEntity<ProdutoBasicResponseDTO> update(@PathVariable String id, @RequestBody ProdutoResquestDTO dto) throws NotFound {
+    public ResponseEntity<ProdutoResponseDTO> update(@PathVariable String id, @RequestBody ProdutoResquestDTO dto) throws NotFound {
         try {
             return new ResponseEntity<>(produtoService.update(id, dto), HttpStatus.OK);
         } catch (Exception e) {
@@ -110,7 +110,7 @@ public class ProdutoController {
         @ApiResponse(responseCode = "423 ", description = "Produto esta bloqueado por uso em outras entidades"),
         @ApiResponse(responseCode = "500", description = "Erro interno do servidor.")
     })
-    public ResponseEntity<String> delete(@PathVariable Integer id) throws IntegratyViolation {
+    public ResponseEntity<String> delete(@PathVariable String id) throws IntegratyViolation {
         try {
             return new ResponseEntity<>(produtoService.delete(id), HttpStatus.OK);
         } catch (Exception e) {
