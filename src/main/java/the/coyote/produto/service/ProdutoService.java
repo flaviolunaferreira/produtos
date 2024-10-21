@@ -15,9 +15,9 @@ import the.coyote.produto.model.dto.ProdutoResquestDTO;
 @Service
 public interface ProdutoService {
 
-    List<ProdutoResponseDTO> findAll(int pagina, int quantidade);
+    List<ProdutoResponseDTO> findAll(Integer pagina, Integer quantidade);
 
-    Optional<ProdutoResponseDTO> findById(String id) throws NotFound;
+    Optional<ProdutoResponseDTO> findById(String id);
 
     ProdutoBasicResponseDTO create(ProdutoResquestDTO dto) throws DuplicateValue;
 

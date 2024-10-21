@@ -50,7 +50,7 @@ public class ProdutoController {
         @ApiResponse(responseCode = "404", description = "Produto não encontrado."),
         @ApiResponse(responseCode = "500", description = "Erro interno do servidor.")
     })
-    public ResponseEntity<Optional<ProdutoResponseDTO>> findById(@PathVariable String id) throws NotFound {
+    public ResponseEntity<Optional<ProdutoResponseDTO>> findById(@PathVariable String id) {
         try {
             return ResponseEntity.ok().body(produtoService.findById(id));
         } catch (Exception e) {

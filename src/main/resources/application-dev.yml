@@ -8,5 +8,5 @@ spring:
       database: produtos   # Nome do banco de dados
 
 server:
-  port: 0
+  port: 8080
 
