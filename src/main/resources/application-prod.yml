@@ -1,0 +1,16 @@
+# eureka:
+#   client:
+#     registerWithEureka: true
+#     fetchRegistry: true
+#     service-url:
+#       defaultZone: https://eurekaserver-production-d700.up.railway.app/eureka/
+#   instance:
+#     preferIpAddress: false
+
+# spring:
+#   application:
+#     name: ${APP_NAME:produto}
+
+# server:
+#   port: ${PORT:8080}  # Use ${PORT} se a Railway estiver fornecendo uma porta dinâmica
+

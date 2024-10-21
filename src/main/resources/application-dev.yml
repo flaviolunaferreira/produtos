@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: produto
+  data:
+    mongodb:
+      host: localhost      # Host do MongoDB (ou IP do servidor)
+      port: 27017          # Porta do MongoDB
+      database: produtos   # Nome do banco de dados
+
+server:
+  port: 0
+
