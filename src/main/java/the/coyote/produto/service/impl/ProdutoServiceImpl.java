@@ -23,6 +23,7 @@ public class ProdutoServiceImpl implements ProdutoService{
 
     @Override
     public List<ProdutoResponseDTO> findAll(int pagina, int quantidade) {
+        
         throw new UnsupportedOperationException("Unimplemented method 'findAll'");
     }
 
